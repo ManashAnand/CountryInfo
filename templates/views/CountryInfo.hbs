@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>headerTag}}
+</head>
+<body>
+       {{>navbar}}
+
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <nav class="navbar bg-light">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                            <input id="countryName" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" id="Submitbtn" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+
+             <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <nav class="navbar bg-light">
+                        <div class="container-fluid">
+            {{!-- Card Section --}}
+            <div class="card" style="width: 18rem;">
+                <img src="https://flagcdn.com/w320/in.png" class="card-img-top" id="imgBar" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" id="hindiTitle">भारत गणराज्य</h5>
+                  </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="englishTitle">Republic of India</li>
+                    <li class="list-group-item" id="region">Asia</li>
+                    <li class="list-group-item" id="capital">New Delhi</li>
+                </ul>
+               
+            </div>
+        </div>
+        </nav>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
